@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Success</title>
+    <style>
+        body { background-color: #0F172A; color: white; text-align: center; font-family: sans-serif; padding-top: 100px; }
+        h1 { color: #38BDF8; }
+    </style>
+</head>
+<body>
+    <h1>Payment Successful</h1>
+    <p>SentinelFlow Engine is unlocking your report...</p>
+
+    <script type="text/javascript">
+        // পেমেন্ট হওয়ার পর এই পেজটি লোড হলেই অ্যান্ড্রয়েড অ্যাপে সিগন্যাল যাবে
+        if (window.DevGuardBridge) {
+            window.DevGuardBridge.onPaymentComplete();
+        }
+    </script>
+</body>
+</html>
